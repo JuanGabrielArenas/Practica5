@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="frmPrincipal.master.cs" Inherits="webAbogadosAsoc.frmPrincipal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 96%;
+            border: 3px solid #0000FF;
+        }
+        .auto-style2 {
+            text-align: center;
+        }
+        .auto-style3 {
+            width: 225px;
+            height: 225px;
+        }
+        .auto-style4 {
+            text-align: center;
+            height: 26px;
+        }
+        .auto-style5 {
+            width: 100%;
+        }
+        .auto-style6 {
+            font-size: xx-large;
+            color: #660033;
+        }
+        .auto-style7 {
+            color: #660033;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            
+            <table align="center" class="auto-style1">
+                <tr>
+                    <td class="auto-style2" style="width: 25%">
+                        <img alt="" class="auto-style3" src="Imagenes/logoAbogAsoc.jpg" /></td>
+                    <td class="auto-style2">
+                        <asp:ContentPlaceHolder ID="Encabezado" runat="server">
+                            <table align="center" class="auto-style5">
+                                <tr>
+                                    <td>
+                                        <h1><span class="auto-style7"><em>Abogados </em></span><span class="auto-style6"><em>Asociados</em></span><span class="auto-style7"><em> Ltda.</em></span></h1>
+                                    </td>
+                                </tr>
+                            </table>
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">
+                        <asp:ContentPlaceHolder ID="Menu" runat="server">
+                            <table align="center" class="auto-style5">
+                                <tr>
+                                    <td>
+                                        <asp:TreeView ID="trvMenuPpal" runat="server" ShowLines="True" OnSelectedNodeChanged="trvMenuPpal_SelectedNodeChanged">
+                                            <Nodes>
+                                                <asp:TreeNode NavigateUrl="~/frmInicio.aspx" Text="Inicio" Value="mnuInicio"></asp:TreeNode>
+                                                <asp:TreeNode Text="Actividades" Value="mnuActividades">
+                                                    <asp:TreeNode NavigateUrl="~/frmCaso.aspx" Text="Casos" Value="opcCasos"></asp:TreeNode>
+                                                </asp:TreeNode>
+                                                <asp:TreeNode Text="Maestros" Value="mnuMaestros">
+                                                    <asp:TreeNode NavigateUrl="~/frmCliente.aspx" Text="Cliente" Value="opcCliente"></asp:TreeNode>
+                                                    <asp:TreeNode NavigateUrl="~/frmAsociado.aspx" Text="Asociado" Value="opcAsociado"></asp:TreeNode>
+                                                    <asp:TreeNode NavigateUrl="~/frmTipoDoc.aspx" Text="Tipo Caso" Value="opcTipoCaso"></asp:TreeNode>
+                                                    <asp:TreeNode NavigateUrl="~/frmClasifTipoCaso.aspx" Text="Clasificacion Tipo Casos" Value="opcClasifTipCasos"></asp:TreeNode>
+                                                    <asp:TreeNode NavigateUrl="~/frmTipoDoc.aspx" Text="Tipo Documento" Value="opcTipoDoc"></asp:TreeNode>
+                                                    <asp:TreeNode NavigateUrl="~/frmSeguimiento.aspx" Text="Seguimientos" Value="opcSeguim"></asp:TreeNode>
+                                                    <asp:TreeNode NavigateUrl="~/frmPreliminar.aspx" Text="Preliminares" Value="opcPrelim"></asp:TreeNode>
+                                                </asp:TreeNode>
+                                            </Nodes>
+                                        </asp:TreeView>
+                                    </td>
+                                </tr>
+                            </table>
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td class="auto-style4">
+                        <asp:ContentPlaceHolder ID="Cuerpo" runat="server">
+                            <asp:ScriptManager ID="ScriptManager1" runat="server">
+                            </asp:ScriptManager>
+                            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                            </asp:UpdatePanel>
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+    </form>
+    <p>
+        -</p>
+</body>
+</html>

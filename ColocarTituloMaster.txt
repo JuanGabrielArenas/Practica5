@@ -1,0 +1,14 @@
+        public void Titulo( string texto )
+        {
+            ContentPlaceHolder elCont;
+            Label refLbl;
+            elCont = (ContentPlaceHolder)Master.FindControl("Encabezado");
+            if (elCont != null)
+            {
+                refLbl = (Label)elCont.FindControl("lblTitPag");
+                if (refLbl != null)
+                {
+                    refLbl.Text = texto;
+                }
+            }
+        }
