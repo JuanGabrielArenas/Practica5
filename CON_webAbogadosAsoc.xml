@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<!-- Comentarios   -->
+<Parametros>
+	<Servidor>MSSQLSERVER01</Servidor> <!-- nombre del servidor en el pc que se encuentra  JuanArenas\juare -->
+	<BaseDatos>BDAbogadoaAsoc</BaseDatos> <!-- Nombre de la base de datos   -->
+	<Usuario>JuanArenas\juare</Usuario>
+	<Clave></Clave>
+	<SeguridadIntegrada>Si</SeguridadIntegrada>
+</Parametros>

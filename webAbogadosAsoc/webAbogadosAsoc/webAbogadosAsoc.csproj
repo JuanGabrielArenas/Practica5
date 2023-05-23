@@ -43,14 +43,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="libConexionBD">
-      <HintPath>..\..\..\Practica4\Practica4\libreriasComunes\libLlenarGrids\libLlenarGrids\bin\Debug\libConexionBD.dll</HintPath>
+    <Reference Include="libConexionBD, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Practica4\libreriasComunes\libConexionBD\libConexionBD\bin\Debug\libConexionBD.dll</HintPath>
     </Reference>
     <Reference Include="libLlenarCBList">
       <HintPath>..\..\..\Practica4\Practica4\libreriasComunes\libLlenarCBList\libLlenarCBList\bin\Debug\libLlenarCBList.dll</HintPath>
     </Reference>
-    <Reference Include="libLlenarCombos">
-      <HintPath>..\..\..\Practica4\Practica4\libreriasComunes\libLlenarCombos\libLlenarCombos\bin\Debug\libLlenarCombos.dll</HintPath>
+    <Reference Include="libLlenarCombos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Practica4\libreriasComunes\libLlenarCombos\libLlenarCombos\bin\Debug\libLlenarCombos.dll</HintPath>
     </Reference>
     <Reference Include="libLlenarGrids">
       <HintPath>..\..\..\Practica4\Practica4\libreriasComunes\libLlenarGrids\libLlenarGrids\bin\Debug\libLlenarGrids.dll</HintPath>
@@ -102,7 +104,9 @@
     <Content Include="frmInicio.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\clsAsociado.cs" />
     <Compile Include="Clases\clsGenerales.cs" />
+    <Compile Include="Clases\clsTipoDoc.cs" />
     <Compile Include="frmPrincipal.Master.cs">
       <DependentUpon>frmPrincipal.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

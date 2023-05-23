@@ -30,7 +30,7 @@
                     <tr>
                         <td class="auto-style10">Nombre:&nbsp;&nbsp;</td>
                         <td class="auto-style11">&nbsp;&nbsp;
-                            <asp:Label ID="lblNombre" runat="server" Text="Label" Width="80%"></asp:Label>
+                            <asp:TextBox ID="txtNombre" runat="server" Width="60%"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
@@ -55,7 +55,7 @@
                             <asp:MenuItem Text="Buscar" Value="opcBuscar"></asp:MenuItem>
                             <asp:MenuItem Text="Grabar" Value="opcGrabar"></asp:MenuItem>
                             <asp:MenuItem Text="Cancelar" Value="opcCancelar"></asp:MenuItem>
-                            <asp:MenuItem Text="Impresion" Value="opcImpresion"></asp:MenuItem>
+                            <asp:MenuItem Text="Imprimir" Value="opcImprimir"></asp:MenuItem>
                         </Items>
                         <StaticHoverStyle BackColor="#99FFCC" BorderColor="#66FFCC" BorderStyle="Solid" BorderWidth="2px" />
                         <StaticMenuStyle HorizontalPadding="20px" />
@@ -68,14 +68,13 @@
         </tr>
         <tr>
             <td>
-                <asp:GridView ID="grvDatos" runat="server" Width="95%" DataSourceID="SqlDataSource1">
+                <asp:GridView ID="grvDatos" runat="server" Width="95%" OnRowCommand="grvDatos_RowCommand">
                     <Columns>
                         <asp:CommandField ButtonType="Image" SelectImageUrl="~/Imagenes/Buscar.jpg" ShowSelectButton="True">
                         <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
                         </asp:CommandField>
                     </Columns>
                 </asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
             </td>
         </tr>
         <tr>

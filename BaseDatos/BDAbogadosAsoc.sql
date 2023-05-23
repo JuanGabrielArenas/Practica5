@@ -127,7 +127,7 @@ AS
 		strNombre_ASO AS Nombre, bitActivo_ASO AS Activo
 		FROM tblASOciado
 	ORDER BY Nombre
-	--Exec USP_Asoc_BuscarGeneral
+	--Exec USP_Asoc_BuscarGeneral;
 	END
 GO
 

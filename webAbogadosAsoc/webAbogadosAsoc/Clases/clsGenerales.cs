@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI.WebControls;
-
-using libConexionBD;
-using libLlenarGrids;
 using libLlenarCombos;
+using libLlenarGrids;
 using libLlenarRBList;
 using libLlenarCBList;
 
@@ -58,7 +53,8 @@ namespace webAbogadosAsoc.Clases
                 return false;
             }
         }
-        public bool llenarCombo(string App, DropDownList Combo, string SQL, string nombrePK, string nombreTexto)
+        public bool llenarCombo(string App, DropDownList Combo, string SQL, 
+            string nombrePK, string nombreTexto)
         {
             try
             {
@@ -92,7 +88,8 @@ namespace webAbogadosAsoc.Clases
                 return false;
             }
         }
-        public bool llenarRadioBL(string App, RadioButtonList RadioBL, string SQL, string nombrePK, string nombreTexto)
+        public bool llenarRadioBL(string App, RadioButtonList RadioBL, string SQL, 
+            string nombrePK, string nombreTexto)
         {
             try
             {
@@ -126,8 +123,8 @@ namespace webAbogadosAsoc.Clases
                 return false;
             }
         }
-
-        public bool llenarCheckBL(string App, CheckBoxList CheckBL, string SQL, string nombrePK, string nombreTexto)
+        public bool llenarCheckBL(string App, CheckBoxList CheckBL, string SQL, 
+            string nombrePK, string nombreTexto)
         {
             try
             {
@@ -161,16 +158,6 @@ namespace webAbogadosAsoc.Clases
                 return false;
             }
         }
-
-        #endregion
-        #region MyRegion
-
-        #endregion
-        #region MyRegion
-
-        #endregion
-        #region MyRegion
-
         #endregion
     }
 }

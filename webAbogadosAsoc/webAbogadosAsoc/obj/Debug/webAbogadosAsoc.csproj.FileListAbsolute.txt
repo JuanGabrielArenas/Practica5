@@ -50,7 +50,11 @@ B:\Users\juare\Documents\prgsw\Practica5\webAbogadosAsoc\webAbogadosAsoc\bin\ros
 B:\Users\juare\Documents\prgsw\Practica5\webAbogadosAsoc\webAbogadosAsoc\bin\roslyn\vbc.rsp
 B:\Users\juare\Documents\prgsw\Practica5\webAbogadosAsoc\webAbogadosAsoc\bin\roslyn\VBCSCompiler.exe
 B:\Users\juare\Documents\prgsw\Practica5\webAbogadosAsoc\webAbogadosAsoc\bin\roslyn\VBCSCompiler.exe.config
+B:\Users\juare\Documents\prgsw\Practica5\webAbogadosAsoc\webAbogadosAsoc\bin\libConexionBD.dll
+B:\Users\juare\Documents\prgsw\Practica5\webAbogadosAsoc\webAbogadosAsoc\bin\libLlenarCombos.dll
 B:\Users\juare\Documents\prgsw\Practica5\webAbogadosAsoc\webAbogadosAsoc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+B:\Users\juare\Documents\prgsw\Practica5\webAbogadosAsoc\webAbogadosAsoc\bin\libConexionBD.pdb
+B:\Users\juare\Documents\prgsw\Practica5\webAbogadosAsoc\webAbogadosAsoc\bin\libLlenarCombos.pdb
 B:\Users\juare\Documents\prgsw\Practica5\webAbogadosAsoc\webAbogadosAsoc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 B:\Users\juare\Documents\prgsw\Practica5\webAbogadosAsoc\webAbogadosAsoc\obj\Debug\webAbogadosAsoc.csproj.AssemblyReference.cache
 B:\Users\juare\Documents\prgsw\Practica5\webAbogadosAsoc\webAbogadosAsoc\obj\Debug\webAbogadosAsoc.csproj.CoreCompileInputs.cache
